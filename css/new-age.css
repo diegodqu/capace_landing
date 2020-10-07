@@ -186,11 +186,11 @@ footer hr {
     margin: 20px;
 }
 
-iframe{
+iframe#registro-frame {
   width: 100%;    border: 0;    height: 100vh;    min-height: 3430px;    overflow: hidden;
 }
 @media (min-width: 992px) {
-  iframe{
+ iframe#registro-frame  {
      min-height: 1740px;  
   }
 .tright{
