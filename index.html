@@ -35,6 +35,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('config', 'UA-239861-31');
 
 </script> 
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -90,7 +97,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div id="DateCountdown" data-date="2020-10-26 00:00:00" style="width: 100%; max-width:500px; height: 125px; padding: 0px; box-sizing: border-box; background-color: #E0E8EF"></div>
             <div class="mt60"> 
               <div class="input-buttom" style="text-align: center;">
-                <a href="#registro"   class="center" style="text-decoration: none; background: #f96e21 !important;    /* width: 335px; */    height: 48px;    border: none;    border-radius: 7px !important;    cursor: pointer;    color: #ffffff;    font-family: 'Nunito';    font-size: 24px;    line-height: 34px;    font-weight: 600;    text-align: center;    padding: 8px 20px;
+                <a id="b_registro" href="#registro"   class="center" style="text-decoration: none; background: #f96e21 !important;    /* width: 335px; */    height: 48px;    border: none;    border-radius: 7px !important;    cursor: pointer;    color: #ffffff;    font-family: 'Nunito';    font-size: 24px;    line-height: 34px;    font-weight: 600;    text-align: center;    padding: 8px 20px;
     position: relative;    transition: all 0.45s cubic-bezier(0.25,1,0.33,1);    -webkit-transition: all 0.45s cubic-bezier(0.25,1,0.33,1);    display: inline-block;"> 
                  QUIERO MI STAND 
                 </a>
@@ -326,6 +333,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
     }
     });  
+
+  jQuery(document).ready(function () { 
+    var newWindowWidth = jQuery(window).width();
+    if (newWindowWidth < 481) {
+        jQuery('#b_registro').click( function() {   event.preventDefault();
+          jQuery('html,body').animate({ scrollTop: jQuery(this).offset().top - ( $(window).height() - jQuery(this).outerHeight(true) ) / -0.21  }, 1000);
+      });
+
+      }
+
+      
+  });
   </script>  
 </body>
 
