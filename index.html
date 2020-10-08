@@ -336,9 +336,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   jQuery(document).ready(function () { 
     var newWindowWidth = jQuery(window).width();
-    if (newWindowWidth < 481) {
-        jQuery('#b_registro').click( function() {   event.preventDefault();
-          jQuery('html,body').animate({ scrollTop: jQuery(this).offset().top - ( $(window).height() - jQuery(this).outerHeight(true) ) / -0.22  }, 1000);
+    if (newWindowWidth < 681) {
+        jQuery('#b_registro').click( function() {
+           event.preventDefault();
+           jQuery('html, body').animate({ scrollTop: 5000 }, 1000);
       });
 
       }
